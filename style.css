@@ -10,5 +10,23 @@
 }
 .nav-item {
     font-family: 'Montserrat', sans-serif;
+  
+}
+div>ul>li.nav-item>a{
     color: black;
+}
+
+/*Producto*/
+
+.producto-header {
+    width: 50%;
+}
+
+button {
+    background-color: #D8C8F0;
+    border: 1px solid #D8C8F0;
+    color: #ffff;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 4px;
+    
 }
