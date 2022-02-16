@@ -1,32 +1,109 @@
-.bg-nav {
-    background-color: #5C7EBF;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/*Paleta de colores*/
+:root {
+    --color-yellow-full: #D5F46A;
+    --color-yellow-light: #E5FF89;
+    --color-purple-full: #AA86E0;
+    --color-purple-light: #D8C8F0;
+    --color-blue-full: #5C7EBF;
+    --color-blue-light: #9BB7EC;
+    --color-gray: #ccc;
+    --color-gray-medium: #f8f9fa; 
 }
 
+/*Nav*/
 
-.logo-name {
-    font-family: 'Cinzel', serif , bold;
-    color: #9BB7EC;
-   
-}
-.nav-item {
-    font-family: 'Montserrat', sans-serif;
-  
-}
-div>ul>li.nav-item>a{
+.nav-link {
     color: black;
-}
-
-/*Producto*/
-
-.producto-header {
-    width: 50%;
-}
-
-button {
-    background-color: #D8C8F0;
-    border: 1px solid #D8C8F0;
-    color: #ffff;
-    font-family: 'Montserrat', sans-serif;
-    border-radius: 4px;
     
 }
+
+.navbar-brand > img {
+    width: 55px;
+}
+.navbar-main .active {
+    text-decoration: underline wavy var(--color-purple-full);
+    text-underline-offset: 9px;
+}
+.bg-icon {
+    background-color: black;
+}
+/*Header*/
+
+/*Iconos del header*/
+
+.icons-social-networks >a {
+    --size: 40px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+/*Foto de header*/
+.photo-frame {
+    font-size: 20px;
+}
+/*Texto del header*/
+h1 {
+    font-family: 'Cinzel Decorative', cursive;
+}
+/*Vectores defini variables de tamaño y animacion */
+.photo-frame::before,
+.photo-frame::after {
+    content: "";
+    display: block;
+    width: var(--box-size);
+    height: var(--box-size);
+    position: absolute;
+    z-index: -10;
+    animation: turnZ 7s linear alternate-reverse;
+}
+.photo-frame::before {
+    --box-size: 3em;
+    background-image: radial-gradient( 
+        var(--color-blue-full)50%, 
+        var(--color-purple-full)50%
+        );
+    top:calc(99% - (var(--box-size) / 2)) ;
+    right: calc(99% - (var(--box-size) / 2));
+
+}
+
+.photo-frame::after {
+    --box-size: 5em;
+    bottom: calc(98% - (var(--box-size) / 2));
+    left: calc(98% - (var(--box-size) / 2));
+    background: linear-gradient(45deg, var(--color-gray-medium) 45%, transparent 45%),
+    radial-gradient(
+        var(--color-purple-light)30%, 
+        var(--color-yellow-full)30% 70%, 
+        var(--color-gray-medium)70%), 
+        transparent 70%;
+}
+
+/*Llame la animacion*/
+
+@keyframes turnZ {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+.header-main {
+    min-height: 100vh;
+}
+
+
+
+
+
+
+

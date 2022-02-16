@@ -15,56 +15,91 @@
     <!--Fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@500&family=Montserrat&display=swap" rel="stylesheet">
+
     <title>Potion</title>
 </head>
 <body>
-      <nav class="navbar navbar-expand-lg bg-nav ">
-        <a class="navbar-brand logo-name" href="#">
-            <img src="img-png/logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
-            Potion
-          </a>
-        
-          <div class="collapse navbar-collapse d-flex justify-content-end bd-highlight mb-2" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Inicio</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="#">Tienda</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Cuidados</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link ">Conocenos</a>
-              </li>
-            </ul>
-          </div>
-      </nav>
-      <!--Carrousel-->
 
-     
-
-      <!--Container-->
-      <section class="container">
-          <!--Row fila-->
-          <div class="row">
-              <!--col tamaño de columna / breakpoint-->
-              <!--sm md lg-->
-              <div class="col-lg-8 col-md-12 col-sm-12">
-                <img src="img-png/10.png" alt="" class="producto-header">
-              </div>
-              <div class="col-lg-4 col-md-12 col-sm-12 align-middle">
-                <p class="align-middle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem iusto ex aut dolore molestias, et repellat reiciendis eos, saepe eius dolor omnis, nisi laboriosam assumenda? Voluptate facilis recusandae accusamus quo?</p>
-              </div>
-              <button class="col-1">TIENDA</button>
-
-          </div>
-      </section>
-
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+    <div class="container">
+       <!--Logo-->
+    <a href="" class="navbar-brand">
+      <img src="img-png/logo.png" alt="Potion vivero">
+    </a>
+    
+    <!--Botón-->
+   <!--  <button class="navbar-toggler bg-icon" 
+    data-bs-toggle="collapse" 
+    data-ts-target="#mainNav" 
+    aria-controls="mainNav" 
+    aria-expanded="false" 
+    aria-label="Barra de navegación">
       
+      <span class="navbar-toggle-icon"></span>
+    </button> -->
+    <div class="pos-f-t">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+          <h4 class="text-white">Collapsed content</h4>
+          <span class="text-muted">Toggleable via the navbar brand.</span>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+    </div>
+   
+    <!--Items-->
+    <div class="collapse navbar-collapse navbar-main" id="mainNav">
+      <div class="nav ms-auto text-dark">
+       
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="pages/tienda.html" class="nav-link">Tienda</a>
+          <a href="pages/cuidados.html" class="nav-link">Cuidados</a>
+          <a href="pages/conocenos.html" class="nav-link">Conocenos</a>
+      </div>
+    </div>
+    </div>
+  </nav>
 
+  <div class="container container-fluid">
+    <!--Header-->
+    <header class="row align-items-center header-main">
+      <div class="col-md-7">
+        <!--Texto principal-->
+        <h1 class="display-2">
+          <span class="d-block">Potion,</span> 
+          Made by witches
+        </h1>
+        <!--Vivero-->
+        <p class="text-muted fw-light text-capitalize">
+          Vivero para amantes de lo natural o...no.
+        </p>
+        <!--Social-->
+        <div class="d-none d-md-block icons-social-networks">
+          <!--Facebook-->
+          <a href="#" target="_blank">
+            <img src="https://img.icons8.com/color/50/000000/facebook.png" alt="Facebook"/>
+          </a>
+          <!--Instagram-->
+          <a href="#" target="_blank">
+            <img src="https://img.icons8.com/color/50/000000/twitter-squared.png" alt="Instagram"/>
+          </a>
+          
+        </div>
+      </div>
+      <div class="col-8 col-md-4">
+        <div class="photo-frame position-relative shadow">
+          <img src="img-png/header3.jpeg" alt="Potion Vivero" class="w-100">
+        </div>
+      </div>
+    </header>
+
+  </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
