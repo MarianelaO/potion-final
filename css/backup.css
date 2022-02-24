@@ -19,8 +19,9 @@
 
 .nav-link {
     color: black;
-    
 }
+
+
 
 .navbar-brand > img {
     width: 55px;
@@ -104,6 +105,18 @@ h1 {
 
 
 
+/*Footer*/
+footer {
+    background-color: var(--color-purple-light);
+    display: flex;
+    justify-content: center;
+}
+
+footer > div > p {
+    padding: 8px;
+    font-family: 'Cinzel Decorative', cursive;
+
+}
 
 
-
+/*Estilos de Conocenos*/
